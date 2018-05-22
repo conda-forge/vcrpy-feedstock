@@ -14,14 +14,16 @@ Summary: Automatically mock your HTTP interactions to simplify and speed up test
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/vcrpy-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/vcrpy-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/vcrpy-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/vcrpy-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/vcrpy-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/vcrpy-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/vcrpy-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/vcrpy-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/vcrpy-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/vcrpy-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/vcrpy-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/vcrpy-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/vcrpy/badges/version.svg)](https://anaconda.org/conda-forge/vcrpy)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/vcrpy/badges/downloads.svg)](https://anaconda.org/conda-forge/vcrpy)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-vcrpy-green.svg)](https://anaconda.org/conda-forge/vcrpy) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/vcrpy.svg)](https://anaconda.org/conda-forge/vcrpy) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/vcrpy.svg)](https://anaconda.org/conda-forge/vcrpy) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/vcrpy.svg)](https://anaconda.org/conda-forge/vcrpy) |
 
 Installing vcrpy
 ================
