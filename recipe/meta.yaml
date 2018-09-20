@@ -1,6 +1,6 @@
 {% set name = "vcrpy" %}
-{% set version = "1.13.0" %}
-{% set sha256 = "7031f9c78a70b9586d2db4a2ec135c4e04194cabff58695ef0cc95e7cd66bc01" %}
+{% set version = "2.0.0" %}
+{% set sha256 = "18b99ad1b1af1b6a4da6d2fb2b77811d8cc75f68c5c24f78e261365eadde94d5" %}
 
 package:
   name: {{ name|lower }}
@@ -12,18 +12,14 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   number: 0
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
-    - pyyaml
-    - wrapt
-    - six >=1.5
-    - mock  # [py27]
-    - contextlib2  # [py27]
+    - pip
 
   run:
     - python
