@@ -1,6 +1,6 @@
 {% set name = "vcrpy" %}
-{% set version = "2.0.1" %}
-{% set sha256 = "57be64aa8e9883a4117d0b15de28af62275c001abcdb00b6dc2d4406073d9a4f" %}
+{% set version = "2.1.0" %}
+{% set sha256 = "0e79239441fb4c731da9f05aecbd062223ef1f4ab668d2400c63c347a7071414" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
-  number: 1000
+  number: 0
 
 requirements:
   host:
