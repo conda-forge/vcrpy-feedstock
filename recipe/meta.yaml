@@ -12,23 +12,22 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   number: 0
 
 requirements:
   host:
-    - python
+    - python >=3.5
     - setuptools
     - pip
 
   run:
-    - python
+    - python >=3.5
     - pyyaml
     - wrapt
     - six >=1.5
     - yarl
-    - mock  # [py27]
-    - contextlib2  # [py27]
 
 test:
   # Python imports
