@@ -1,6 +1,5 @@
 {% set name = "vcrpy" %}
 {% set version = "4.2.0" %}
-{% set sha256 = "94520b86fb765925adc8c77ff934e89a5e156c28e74a314320217ef1b454afe0" %}
 
 package:
   name: {{ name|lower }}
@@ -9,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 94520b86fb765925adc8c77ff934e89a5e156c28e74a314320217ef1b454afe0
 
 build:
   noarch: python
@@ -18,12 +17,12 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.7
     - setuptools
     - pip
 
   run:
-    - python >=3.5
+    - python >=3.7
     - pyyaml
     - wrapt
     - six >=1.5
