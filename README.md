@@ -1,11 +1,11 @@
-About vcrpy
-===========
+About vcrpy-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/vcrpy-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/kevin1024/vcrpy
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/vcrpy-feedstock/blob/main/LICENSE.txt)
 
 Summary: Automatically mock your HTTP interactions to simplify and speed up testing
 
