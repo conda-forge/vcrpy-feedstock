@@ -1,5 +1,5 @@
 {% set name = "vcrpy" %}
-{% set version = "5.1.0" %}
+{% set version = "6.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bbf1532f2618a04f11bce2a99af3a9647a32c880957293ff91e0a5f187b6b3d2
+  sha256: 04fc36b53981b32680d7a860bf4ceca0fbe9948349b2ac7ffd4d8f7324b77006
 
 build:
   noarch: python
