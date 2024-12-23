@@ -6,14 +6,13 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 88e13d9111846745898411dbc74a75ce85870af96dd320d75f1ee33158addc09
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
-  number: 1
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 2
 
 requirements:
   host:
@@ -26,9 +25,11 @@ requirements:
     - pyyaml
     - wrapt
     - yarl
+    # py<310
+    - urllib3 <2 
+
 
 test:
-  # Python imports
   requires:
     - python {{ python_min }}
   imports:
