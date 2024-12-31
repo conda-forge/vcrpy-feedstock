@@ -1,5 +1,5 @@
 {% set name = "vcrpy" %}
-{% set version = "6.0.2" %}
+{% set version = "7.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 88e13d9111846745898411dbc74a75ce85870af96dd320d75f1ee33158addc09
+  sha256: 176391ad0425edde1680c5b20738ea3dc7fb942520a48d2993448050986b3a50
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 2
+  number: 0
 
 requirements:
   host:
@@ -26,7 +26,7 @@ requirements:
     - wrapt
     - yarl
     # py<310
-    - urllib3 <2 
+    - urllib3 <2
 
 
 test:
