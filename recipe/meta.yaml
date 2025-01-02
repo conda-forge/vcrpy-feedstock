@@ -1,5 +1,6 @@
 {% set name = "vcrpy" %}
 {% set version = "7.0.0" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -25,9 +26,6 @@ requirements:
     - pyyaml
     - wrapt
     - yarl
-    # py<310
-    - urllib3 <2
-
 
 test:
   requires:
