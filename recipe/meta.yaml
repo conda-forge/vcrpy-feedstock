@@ -1,5 +1,5 @@
 {% set name = "vcrpy" %}
-{% set version = "8.1.1" %}
+{% set version = "8.2.1" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 58e3053e33b423f3594031cb758c3f4d1df931307f1e67928e30cf352df7709f
+  sha256: d73a6e4eb6dae8148e659764b7a00e68cc51ba29ba9e6a85e1f0790ad96b97df
 
 build:
   noarch: python
